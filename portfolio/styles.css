@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background: url('images/hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.hero h1 {
+    margin-bottom: 1rem;
+}
+
+.hero form {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.hero form input, .hero form button {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.destinations {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.destination-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.destination-cards .card {
+    flex: 1 1 calc(33.333% - 1rem);
+    background-color: #f4f4f4;
+    padding: 1rem;
+    text-align: center;
+}
+
+.destination-cards .card img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 2rem 1rem;
+    }
+
+    .destination-cards .card {
+        flex: 1 1 calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .destination-cards .card {
+        flex: 1 1 100%;
+    }
+}

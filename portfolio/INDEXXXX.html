@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">TravelCo</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">Bookings</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Explore the World</h1>
+        <form id="searchForm">
+            <input type="text" placeholder="Search destinations" id="searchInput">
+            <button type="submit">Search</button>
+        </form>
+    </section>
+    <section class="destinations">
+        <h2>Popular Destinations</h2>
+        <div class="destination-cards" id="destinationCards">
+            <!-- Destination cards will be injected here -->
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 TravelCo. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
